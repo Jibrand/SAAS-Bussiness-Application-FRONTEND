@@ -1,0 +1,88 @@
+{Phase9 ?<>
+  <Box sx={{ flexDirection: 'row' }}>
+          <Box
+            m={1}
+            //margin
+            display="flex"
+            justifyContent="flex-end"
+            alignItems="flex-end"
+          >
+            <Button variant="contained" color="secondary" sx={{ height: 40 }} onClick={BackTop}>
+              back 1
+            </Button>
+          </Box>
+          <Typography variant="h4" gutterBottom className={classes.MainHeadingNew}>
+          INFUSION PUMP
+            <span style={{ color: "black", fontSize: "19px", marginLeft: "25px" }}>No</span> <Switch size="small" /><span style={{ color: "black", fontSize: "19px" }}>Yes</span>
+          </Typography>
+        </Box>
+
+
+         <Container maxWidth="lg" className={classes.form}>
+          <Typography variant='h5' className={classes.headingchange} style={{ color: "#004580" }} >TYPE OF INFUSION PUMP</Typography>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Volumetric Infusion Pump:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={    VolumetricInfusionPump  } onChange={(e) => setVolumetricInfusionPump      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Drip-rate Infusion Pump:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={    Drip_rateInfusionPump  } onChange={(e) => setDrip_rateInfusionPump      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Type 1 - Continuous Infusion Flow Only:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={     Type1_ContinuousInfusionFlowOnly } onChange={(e) => setType1_ContinuousInfusionFlowOnly      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+           <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Type 2 - Non-continuous Flow Only:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={     Type2_n_continuousFlowOnly } onChange={(e) => setType2_n_continuousFlowOnly      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Type 3 - Discrete Delivery of a Bolus:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={    Type3_DiscreteDeliveryofaBolus  } onChange={(e) => setType3_DiscreteDeliveryofaBolus      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>Type 4 - Type 1 Combined With Type 3 and/or Type 2 in Same Equipment:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={    Type4_Type1CombinedWithType3and_orType2inSameEquipment  } onChange={(e) => setType4_Type1CombinedWithType3and_orType2inSameEquipment      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={7} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Type 5 - Profile Pump:</b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={5}>  <span style={{ color: "black" }}  >No</span> <Switch size="small" checked={   Type5_ProfilePump   } onChange={(e) => setType5_ProfilePump      (e.target.checked)} /><span style={{ color: "black" }}>Yes</span> </Grid>
+          </Grid>
+          <br/>
+          <Typography variant='h5' className={classes.headingchange} style={{ color: "#004580" }} >FLOW RATE</Typography>
+        
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={5} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>      Minimum:   </b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={7}> <TextField name="creator" variant="outlined" size="small" align="center" fullWidth className={classes.fullWidth1change} label="Enter Here" value={   Minimum_phase_9   } onChange={(e) => setMinimum_phase_9      (e.target.value)} /> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={5} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>    Intermediate:     </b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={7}> <TextField name="creator" variant="outlined" size="small" align="center" fullWidth className={classes.fullWidth1change} label="Enter Here" value={  Intermediate_phase_9    } onChange={(e) => setIntermediate_phase_9      (e.target.value)} /> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={5} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>   Maximum:      </b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={7}> <TextField name="creator" variant="outlined" size="small" align="center" fullWidth className={classes.fullWidth1change} label="Enter Here" value={    Maximum_phase_9  } onChange={(e) => setMaximum_phase_9      (e.target.value)} /> </Grid>
+          </Grid>
+          <br/>
+          <Typography variant='h5' className={classes.headingchange} style={{ color: "#004580" }} >BOLUS  </Typography>
+        
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={5} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>    Minimum:     </b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={7}> <TextField name="creator" variant="outlined" size="small" align="center" fullWidth className={classes.fullWidth1change} label="Enter Here" value={   Minimum_phase_9_2   } onChange={(e) => setMinimum_phase_9_2      (e.target.value)} /> </Grid>
+          </Grid>
+             <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={5} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>    Maximum:     </b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={7}> <TextField name="creator" variant="outlined" size="small" align="center" fullWidth className={classes.fullWidth1change} label="Enter Here" value={    Maximum_phase_9_2  } onChange={(e) => setMaximum_phase_9_2      (e.target.value)} /> </Grid>
+          </Grid>
+          <Typography variant='h5' className={classes.headingchange} style={{ color: "#004580" }} >BOLUS  </Typography>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={5} className={classes.grid}><Typography variant='body1' className={classes.heading}  ><b>    No. of Infusion Sets Used With Equipment Under Test:   </b></Typography></Grid>
+            <Grid item xs={12} sm={12} md={7}> <TextField name="creator" variant="outlined" size="small" align="center" fullWidth className={classes.fullWidth1change} label="Enter Here" value={     ofInfusionSetsUsedWithEquipmentUnderTest_phase_9 } onChange={(e) => setofInfusionSetsUsedWithEquipmentUnderTest_phase_9      (e.target.value)} /> </Grid>
+          </Grid>
+          <Grid container style={{ alignItems: "center", marginTop: "20px" }}>
+            <Grid item xs={12} sm={12} md={12}>
+              <Button variant="contained" color="primary" className={classes.button} align="center" alignItem="center" size="medium" onClick={Clickchange6} type="submit"> Next </Button>
+            </Grid>
+            </Grid>
+          </Container>
+</>:null}

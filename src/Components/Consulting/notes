@@ -1,0 +1,4 @@
+  const data = {
+    postData: postData,
+    user: JSON.stringify(user)
+  };
